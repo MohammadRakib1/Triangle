@@ -32,9 +32,28 @@ function calculateRectangleArea() {
     const length = parseFloat(lengthText);
     console.log(length);
 
-    const para = width * length;
-    console.log('area of the rectangle is:', para);
+    const area = width * length;
+    console.log('area of the rectangle is:', area);
 
     const rectangleAreaSpan = document.getElementById('rectangle-area');
-    rectangleAreaSpan.innerText = para;
+    rectangleAreaSpan.innerText = area;
+}
+
+// parallelogram
+function calculateParallelogramArea() {
+    const parallelogramBaseInput = document.getElementById('parallelogram-base');
+    const parallelogramBaseText = parallelogramBaseInput.value;
+    const base = parseFloat(parallelogramBaseText);
+    console.log(base);
+
+    const parallelogramHeightInput = document.getElementById('parallelogram-height');
+    const parallelogramHeightText = parallelogramHeightInput.value;
+    const height = parseFloat(parallelogramHeightText);
+    console.log(height);
+    
+    const area = base * height;
+    console.log(area);
+
+    const parallelogramAreaSpan = document.getElementById('parallelogram');
+    parallelogramAreaSpan.innerText = area;
 }
