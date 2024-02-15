@@ -86,7 +86,32 @@
                             <p>Area: <span id="parallelogram">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div>
-                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!----------- pentagon---------->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 X p X b</p>
+                        <div>
+                            <input id="pentagon-perimeter"
+                                class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white" type="text"
+                                placeholder="p = 6cm">
+                            <span>cm</span>
+                            <input id="pentagon-apothem"
+                                class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white" type="text"
+                                placeholder="b = 10cm">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="pentagon">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>

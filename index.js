@@ -20,7 +20,7 @@ function triangleArea() {
     triangleAreaSpan.innerText = area;
 }
 
-// Rectangle
+// ---------------Rectangle---------------
 function calculateRectangleArea() {
     const widthInput = document.getElementById('rectangle-width');
     const widthText = widthInput.value;
@@ -39,7 +39,7 @@ function calculateRectangleArea() {
     rectangleAreaSpan.innerText = area;
 }
 
-// parallelogram
+// --------------------parallelogram-----------------
 function calculateParallelogramArea() {
     const parallelogramBaseInput = document.getElementById('parallelogram-base');
     const parallelogramBaseText = parallelogramBaseInput.value;
@@ -50,10 +50,31 @@ function calculateParallelogramArea() {
     const parallelogramHeightText = parallelogramHeightInput.value;
     const height = parseFloat(parallelogramHeightText);
     console.log(height);
-    
+
     const area = base * height;
     console.log(area);
 
     const parallelogramAreaSpan = document.getElementById('parallelogram');
     parallelogramAreaSpan.innerText = area;
+}
+
+// ----------------pentagon---------------
+function calculatePentagonArea() {
+    const perimeter = getInputValueById('pentagon-perimeter');
+    const apothem = getInputValueById('pentagon-apothem');
+    
+    const area = 0.5 * perimeter * apothem;
+    setInnerTextById('pentagon', area);
+}
+
+function getInputValueById(inputFieldId) {
+    const inputField = document.getElementById(inputFieldId);
+    const inputValueText = inputField.value;
+    const value = parseFloat(inputValueText);
+    return value;
+}
+
+function setInnerTextById(elementId, area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
 }
