@@ -35,7 +35,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                            <p>Result: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="">
                             <button onclick="triangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -59,7 +59,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                            <p>Result: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div>
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -83,7 +83,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="parallelogram">0</span> <span>cm<sup>2</sup></span></p>
+                            <p>Result: <span id="parallelogram">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div>
                             <button onclick="calculateParallelogramArea()"
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <!----------- pentagon---------->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-96 bg-base-100 shadow-xl mt-8">
                     <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Pentagon</h2>
@@ -108,10 +108,56 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="pentagon">0</span> <span>cm<sup>2</sup></span></p>
+                            <p>Result: <span id="pentagon">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div>
-                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculatePentagon()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!----------- Rhombus ----------->
+                <div class="card w-96 bg-base-100 shadow-xl mt-8">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                        <div>
+                            <input id="rhombus-major" class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white"
+                                type="text" placeholder="d = 16cm">
+                            <span>cm</span>
+                            <input id="rhombus-minor" class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white"
+                                type="text" placeholder="d = 8cm">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Result: <span id="rhombus">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div>
+                            <button onclick="calculateRhombus()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ellipse -->
+                <div class="card w-96 bg-base-100 shadow-xl mt-8">
+                    <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = πab</p>
+                        <div>
+                            <input id="ellipse-major-radius"
+                                class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white" type="text"
+                                placeholder="a = 10cm">
+                            <span>cm</span>
+                            <input id="ellipse-minor-radius"
+                                class="w-24 mr-4 ml-2 texl-2xl p-2 rounded-sm bg-black text-white" type="text"
+                                placeholder="b = 4cm">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Result: <span id="ellipse">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div>
+                            <button onclick="calculateEllipse()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -123,6 +169,7 @@
         </div>
     </main>
     <script src="index.js"></script>
+    <script src="pentagon.js"></script>
 </body>
 
 </html>
